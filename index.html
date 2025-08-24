@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 5</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>Mondrian Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
 <body>
-    <header>
-        <h1>Homework 5</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Homework</h1>
+    <table class="mondrian" aria-label="Таблиця у стилі Мондріана">
+        <colgroup>
+            <col class="c1" />
+            <col class="c2" />
+            <col class="c3" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <!-- Великий білий блок -->
+                <td class="white" colspan="2" rowspan="2">
+                    <h2>Стиль Мондріана</h2>
+                    <p>Мінімалізм, чіткі лінії та базові кольори.</p>
+                </td>
+                <!-- Червоний блок -->
+                <td class="red">
+                    <strong>Червоний</strong><br>
+                    Енергія та сила
+                </td>
+            </tr>
+            <tr>
+                <!-- Синій блок -->
+                <td class="blue">
+                    <strong>Синій</strong><br>
+                    Спокій і гармонія
+                </td>
+            </tr>
+            <tr>
+                <!-- Жовтий блок -->
+                <td class="yellow">
+                    <strong>Жовтий</strong><br>
+                    Радість і світло
+                </td>
+                <!-- Маленький білий -->
+                <td class="white">
+                    <em>Чорні лінії</em><br>
+                    Структура і баланс
+                </td>
+                <!-- Білий -->
+                <td class="white">
+                    <p>Абстракція<br>та простота</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
+</html>

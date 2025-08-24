@@ -1,0 +1,69 @@
+:root {
+    --line: 12px;
+    /* товщина чорних ліній-сітки */
+    --outer: 18px;
+    /* товщина зовнішньої рамки */
+    --red: #d40920;
+    --blue: #1348da;
+    --yellow: #f7d842;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Таблиця як полотно */
+.mondrian {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 760px;
+    /* можна змінити під себе */
+    height: 560px;
+    /* можна змінити під себе */
+    border: var(--outer) solid var(--black);
+    /* товста рамка по периметру */
+    margin: 24px auto;
+    background: var(--white);
+}
+
+/* Базова «сітка» */
+.mondrian td {
+    border: var(--line) solid var(--black);
+    padding: 0;
+}
+
+/* Керування пропорціями через colgroup */
+.mondrian col.c1 {
+    width: 28%;
+}
+
+.mondrian col.c2 {
+    width: 22%;
+}
+
+.mondrian col.c3 {
+    width: 20%;
+}
+
+.mondrian col.c4 {
+    width: 30%;
+}
+
+/* Кольори */
+.red {
+    background: var(--red);
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.yellow {
+    background: var(--yellow);
+}
+
+.white {
+    background: var(--white);
+}
+
+.black {
+    background: var(--black);
+}

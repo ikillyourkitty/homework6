@@ -8,19 +8,22 @@ body {
 
 .mondrian {
     border-collapse: collapse;
-    border: 8px solid black;
-    width: 80%;
-    max-width: 900px;
-    height: 600px;
+    border: 10px solid black;
+    width: 90%;
+    max-width: 1200px;
+    height: 700px;
+    table-layout: fixed;
 }
 
+/* товсті чорні лінії */
 .mondrian td {
-    border: 8px solid black;
+    border: 10px solid black;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #111;
+    overflow: hidden;
 }
 
 /* кольори */
@@ -40,4 +43,47 @@ body {
 
 .white {
     background: #fff;
+}
+
+.grey {
+    background: #bfbfbf;
+}
+
+.brown {
+    background: #7f4e1e;
+    color: #fff;
+}
+
+.beige {
+    background: #e6d5b8;
+}
+
+.lightblue {
+    background: #7ec8e3;
+    color: #fff;
+}
+
+/* різні пропорції колонок */
+.c1 {
+    width: 15%;
+}
+
+.c2 {
+    width: 10%;
+}
+
+.c3 {
+    width: 20%;
+}
+
+.c4 {
+    width: 20%;
+}
+
+.c5 {
+    width: 20%;
+}
+
+.c6 {
+    width: 15%;
 }

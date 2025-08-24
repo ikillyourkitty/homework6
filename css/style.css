@@ -1,69 +1,43 @@
-:root {
-    --line: 12px;
-    /* товщина чорних ліній-сітки */
-    --outer: 18px;
-    /* товщина зовнішньої рамки */
-    --red: #d40920;
-    --blue: #1348da;
-    --yellow: #f7d842;
-    --black: #000000;
-    --white: #ffffff;
+body {
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Таблиця як полотно */
 .mondrian {
     border-collapse: collapse;
-    table-layout: fixed;
-    width: 760px;
-    /* можна змінити під себе */
-    height: 560px;
-    /* можна змінити під себе */
-    border: var(--outer) solid var(--black);
-    /* товста рамка по периметру */
-    margin: 24px auto;
-    background: var(--white);
+    border: 8px solid black;
+    width: 80%;
+    max-width: 900px;
+    height: 600px;
 }
 
-/* Базова «сітка» */
 .mondrian td {
-    border: var(--line) solid var(--black);
-    padding: 0;
+    border: 8px solid black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
 }
 
-/* Керування пропорціями через colgroup */
-.mondrian col.c1 {
-    width: 28%;
-}
-
-.mondrian col.c2 {
-    width: 22%;
-}
-
-.mondrian col.c3 {
-    width: 20%;
-}
-
-.mondrian col.c4 {
-    width: 30%;
-}
-
-/* Кольори */
+/* кольори */
 .red {
-    background: var(--red);
+    background: #d40920;
+    color: #fff;
 }
 
 .blue {
-    background: var(--blue);
+    background: #1356a2;
+    color: #fff;
 }
 
 .yellow {
-    background: var(--yellow);
+    background: #f7d842;
 }
 
 .white {
-    background: var(--white);
-}
-
-.black {
-    background: var(--black);
+    background: #fff;
 }
